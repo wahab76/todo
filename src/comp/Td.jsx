@@ -39,10 +39,10 @@ function Td() {
 
     }
   return (
-    <div className="td flex items-center justify-center flex-col bg-blue-200 md:scale-[1] scale-[.7] md:w-[40%] m-auto py-10 px-6 rounded-lg left-[10%] absolute top-[20%] md:left-[30%]">
+    <div className="td flex items-center justify-center flex-col bg-blue-200 md:scale-[1] scale-[.7] md:w-[40%] m-auto py-10 px-6 rounded-lg absolute top-[20%] md:left-[30%]">
         <h1 className="text-2xl font-bold text-center">ToDo List</h1>
         <div className="tdd mt-4">
-            <input type="text" onKeyDown={keyf} className="text-xl py-2 px-4" value={input} onChange={inc} placeholder='Enter your Task' />
+            <input type="text" onKeyDown={keyf} className="text-xl py-2 px-4 w-[60%] md:ml-0 ml-4" value={input} onChange={inc} placeholder='Enter your Task' />
             <button onClick={add} className="text-xl px-4 py-2 bg-gray-700 ml-4 text-white rounded-lg">Add</button>
             {todos.map((todo, index) => (
                 <div key={index} className="flex items-center justify-between w-[80%] m-auto mt-4">
