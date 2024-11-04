@@ -39,7 +39,7 @@ function Td() {
 
     }
   return (
-    <div className="td flex items-center justify-center flex-col bg-blue-200 w-[80%] md:w-[30%] m-auto py-10 rounded-lg left-[10%] absolute top-[20%] md:left-[35%]">
+    <div className="td flex items-center justify-center flex-col bg-blue-200 md:scale-[1] scale-[.7] md:w-[40%] m-auto py-10 px-6 rounded-lg left-[10%] absolute top-[20%] md:left-[30%]">
         <h1 className="text-2xl font-bold text-center">ToDo List</h1>
         <div className="tdd mt-4">
             <input type="text" onKeyDown={keyf} className="text-xl py-2 px-4" value={input} onChange={inc} placeholder='Enter your Task' />
